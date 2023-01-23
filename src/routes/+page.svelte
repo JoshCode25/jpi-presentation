@@ -1,8 +1,11 @@
 <script>
 	import SvgContainer from '$lib/SVGContainer.svelte';
+	import { SVGInfoStore } from '../Store.js';
 	import Books from '$lib/svg/Books.svelte';
 	import Community from '$lib/svg/Community.svelte';
-	import Manager from '../lib/svg/Manager.svelte';
+	import Manager from '$lib/svg/Manager.svelte';
+
+	console.log($SVGInfoStore, Object.keys($SVGInfoStore));
 </script>
 
 <svg
