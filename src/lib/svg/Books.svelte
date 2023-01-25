@@ -6,6 +6,7 @@
 	export let y = 0;
 	export let width = 200;
 	export let height = 200;
+	export let viewBoxSize = 1200;
 </script>
 
 <svg
@@ -14,7 +15,7 @@
 	{width}
 	{height}
 	version="1.1"
-	viewBox="0 0 1200 1200"
+	viewBox={`0 0 ${viewBoxSize} ${viewBoxSize}`}
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<rect width="100%" height="100%" />

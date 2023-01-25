@@ -1,18 +1,20 @@
 <script>
-	import Books from '$lib/svg/Books.svelte';
-	import Community from '$lib/svg/Community.svelte';
-	import Manager from '$lib/svg/Manager.svelte';
-	import Outreach from '$lib/svg/Outreach.svelte';
-	import PersonalGrowth from '$lib/svg/PersonalGrowth.svelte';
-	import QuestionMark from '$lib/svg/QuestionMark.svelte';
-	import Student from '$lib/svg/Student.svelte';
-	import TechnicalLibrary from '$lib/svg/TechnicalLibrary.svelte';
-	import Training from '$lib/svg/Training.svelte';
-	import Why from '$lib/svg/Why.svelte';
+	import { SVGInfoStore } from '../Store.js';
 
 	export let name = 'QuestionMark';
-	export let activeColor = 'green';
-	export let inactiveColor = 'gray';
+	export let viewBoxSize = 1200;
+
+	const inactiveColor = 'gray';
+	const svgInfo = $SVGInfoStore[name];
+	const {
+		component,
+		displayText,
+		activeColor,
+		svgWidth,
+		svgHeight,
+		svgX,
+		svgY,
+	} = svgInfo;
 
 	let SVGActive = false;
 	$: fillColor = SVGActive ? activeColor : inactiveColor;
@@ -24,5 +26,12 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <g on:click={toggleActive} fill={fillColor}>
-	<slot />
+	<svelte:component
+		this={component}
+		width={svgWidth}
+		height={svgHeight}
+		x={svgX}
+		y={svgY}
+		{viewBoxSize}
+	/>
 </g>
