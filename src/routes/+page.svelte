@@ -18,7 +18,7 @@
 		xmlns="http://www.w3.org/2000/svg"
 	>
 		{#each svgNames as svgName}
-			<SvgContainer name={svgName} {viewBoxSize} />
+			<SvgContainer name={svgName} />
 		{/each}
 	</svg>
 </div>

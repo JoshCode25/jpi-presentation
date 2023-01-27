@@ -2,7 +2,6 @@
 	import { SVGInfoStore } from '../Store.js';
 
 	export let name = 'QuestionMark';
-	export let viewBoxSize = 1200;
 
 	const inactiveColor = 'gray';
 	const svgInfo = $SVGInfoStore[name];
@@ -32,6 +31,5 @@
 		height={svgHeight}
 		x={svgX}
 		y={svgY}
-		{viewBoxSize}
 	/>
 </g>
