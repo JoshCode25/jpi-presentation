@@ -1,6 +1,6 @@
 <script>
 	import SvgContainer from '$lib/SVGContainer.svelte';
-	import { SVGInfoStore } from '../Store.js';
+	import { SVGInfoStore } from '$lib/stores/SVGInfoStore.js';
 
 	let svgNames = Object.keys($SVGInfoStore);
 	const svgDefaultViewBox = 1200;

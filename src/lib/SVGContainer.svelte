@@ -1,5 +1,5 @@
 <script>
-	import { SVGInfoStore } from '../Store.js';
+	import { SVGInfoStore } from '$lib/stores/SVGInfoStore.js';
 
 	export let name = 'QuestionMark';
 
