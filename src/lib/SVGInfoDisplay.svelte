@@ -2,6 +2,12 @@
 	import { SVGInfoStore } from '$lib/stores/SVGInfoStore.js';
 
 	export let name;
+
+	//remove svg property names that shouldn't be displayed/edited
+	const hiddenLabelNames = ['name', 'component'];
+	const labelNames = Object.keys($SVGInfoStore[name]).filter(
+		(keyName) => !hiddenLabelNames.includes(keyName)
+	);
 	console.log($SVGInfoStore[name]);
 </script>
 
@@ -9,31 +15,21 @@
 	<div>
 		<h3>{name}</h3>
 		<ul>
-			<li>
-				x: <input bind:value={$SVGInfoStore[name].svgX} />
-			</li>
-			<li>
-				y: <input bind:value={$SVGInfoStore[name].svgY} />
-			</li>
-			<li>
-				width: <input bind:value={$SVGInfoStore[name].svgWidth} />
-			</li>
-			<li>
-				height: <input bind:value={$SVGInfoStore[name].svgHeight} />
-			</li>
-			<li>
-				activeColor: <input bind:value={$SVGInfoStore[name].activeColor} />
-			</li>
-			<li>
-				displayText: <input bind:value={$SVGInfoStore[name].displayText} />
-			</li>
+			{#each labelNames as labelName}
+				<li>
+					{labelName}: <input bind:value={$SVGInfoStore[name][labelName]} />
+				</li>
+			{/each}
 		</ul>
 	</div>
 {/if}
 
 <style>
+	h3 {
+		margin: 5px;
+	}
 	ul {
-		margin: 10px;
+		margin: 5px 10px;
 		padding: 0;
 		display: flex;
 		flex-flow: row wrap;
@@ -42,6 +38,11 @@
 		list-style-type: none;
 	}
 	input {
-		width: auto;
+		width: 150px;
+		border: 1px solid white;
+	}
+	input:hover {
+		border: 1px solid black;
+		cursor: text;
 	}
 </style>

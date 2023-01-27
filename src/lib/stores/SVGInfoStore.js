@@ -119,6 +119,11 @@ function createSVGInfoStore() {
 
 	return {
 		subscribe: SVGInfoStore.subscribe,
+		updateValue: (component, propName, propValue) =>
+			SVGInfoStore.update((o) => {
+				o[component][propName] = propValue;
+				return o;
+			}),
 	};
 }
 

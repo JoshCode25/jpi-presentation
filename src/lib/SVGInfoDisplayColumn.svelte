@@ -8,3 +8,10 @@
 		<SVGInfoDisplay name={svgName} />
 	{/each}
 </div>
+
+<style>
+	div {
+		max-height: 600px;
+		overflow: auto;
+	}
+</style>
