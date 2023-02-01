@@ -8,7 +8,6 @@
 	const labelNames = Object.keys($SVGInfoStore[name]).filter(
 		(keyName) => !hiddenLabelNames.includes(keyName)
 	);
-	console.log($SVGInfoStore[name]);
 </script>
 
 {#if name}
@@ -17,7 +16,12 @@
 		<ul>
 			{#each labelNames as labelName}
 				<li>
-					{labelName}: <input bind:value={$SVGInfoStore[name][labelName]} />
+					{labelName}:
+					<input
+						on:input={(value) =>
+							SVGInfoStore.updateValue(name, labelName, value)}
+						bind:value={$SVGInfoStore[name][labelName]}
+					/>
 				</li>
 			{/each}
 		</ul>
