@@ -19,28 +19,28 @@ export let SVGInfoStore = writable({
 		activeColor: 'red',
 		svgWidth: '200',
 		svgHeight: '200',
-		svgX: '400',
-		svgY: '200',
+		svgX: '600',
+		svgY: '800',
 	},
 	Community: {
 		name: 'Community',
 		component: Community,
 		displayText: 'Community Growth',
 		activeColor: 'green',
-		svgWidth: '200',
-		svgHeight: '200',
-		svgX: '300',
-		svgY: '300',
+		svgWidth: '350',
+		svgHeight: '350',
+		svgX: '600',
+		svgY: '350',
 	},
 	Manager: {
 		name: 'Manager',
 		component: Manager,
 		displayText: 'Experienced Employees',
 		activeColor: 'gold',
-		svgWidth: '200',
-		svgHeight: '200',
-		svgX: '500',
-		svgY: '500',
+		svgWidth: '175',
+		svgHeight: '175',
+		svgX: '250',
+		svgY: '0',
 	},
 	Outreach: {
 		name: 'Outreach',
@@ -49,8 +49,8 @@ export let SVGInfoStore = writable({
 		activeColor: 'blue',
 		svgWidth: '200',
 		svgHeight: '200',
-		svgX: '700',
-		svgY: '700',
+		svgX: '450',
+		svgY: '1100',
 	},
 	PersonalGrowth: {
 		name: 'PersonalGrowth',
@@ -59,8 +59,8 @@ export let SVGInfoStore = writable({
 		activeColor: 'green',
 		svgWidth: '200',
 		svgHeight: '200',
-		svgX: '900',
-		svgY: '900',
+		svgX: '700',
+		svgY: '200',
 	},
 	QuestionMark: {
 		name: 'QuestionMark',
@@ -69,8 +69,8 @@ export let SVGInfoStore = writable({
 		activeColor: 'green',
 		svgWidth: '200',
 		svgHeight: '200',
-		svgX: '900',
-		svgY: '100',
+		svgX: '350',
+		svgY: '275',
 	},
 	Student: {
 		name: 'Student',
@@ -79,8 +79,8 @@ export let SVGInfoStore = writable({
 		activeColor: 'lightgreen',
 		svgWidth: '200',
 		svgHeight: '200',
-		svgX: '900',
-		svgY: '300',
+		svgX: '0',
+		svgY: '250',
 	},
 	TechnicalLibrary: {
 		name: 'TechnicalLibrary',
@@ -89,8 +89,8 @@ export let SVGInfoStore = writable({
 		activeColor: 'lightblue',
 		svgWidth: '200',
 		svgHeight: '200',
-		svgX: '900',
-		svgY: '500',
+		svgX: '700',
+		svgY: '1100',
 	},
 	Training: {
 		name: 'Training',
@@ -99,8 +99,8 @@ export let SVGInfoStore = writable({
 		activeColor: 'orange',
 		svgWidth: '200',
 		svgHeight: '200',
-		svgX: '900',
-		svgY: '700',
+		svgX: '350',
+		svgY: '550',
 	},
 	Why: {
 		name: 'Why',
@@ -109,230 +109,7 @@ export let SVGInfoStore = writable({
 		activeColor: 'purple',
 		svgWidth: '200',
 		svgHeight: '200',
-		svgX: '700',
-		svgY: '100',
+		svgX: '150',
+		svgY: '850',
 	},
 });
-
-// Books
-// displayText:
-// Technical Library
-// activeColor:
-// red
-// svgWidth:
-// 200
-// svgHeight:
-// 200
-// svgX:
-// 600
-// svgY:
-// 800
-// Community
-// displayText:
-// Community Growth
-// activeColor:
-// green
-// svgWidth:
-// 350
-// svgHeight:
-// 350
-// svgX:
-// 600
-// svgY:
-// 350
-// Manager
-// displayText:
-// Experienced Employees
-// activeColor:
-// gold
-// svgWidth:
-// 175
-// svgHeight:
-// 175
-// svgX:
-// 250
-// svgY:
-// 0
-// Outreach
-// displayText:
-// SEO/Outreach
-// activeColor:
-// blue
-// svgWidth:
-// 200
-// svgHeight:
-// 200
-// svgX:
-// 450
-// svgY:
-// 1100
-// PersonalGrowth
-// displayText:
-// Employee Growth
-// activeColor:
-// green
-// svgWidth:
-// 200
-// svgHeight:
-// 200
-// svgX:
-// 700
-// svgY:
-// 200
-// QuestionMark
-// displayText:
-// Community Growth
-// activeColor:
-// magenta
-// svgWidth:
-// 200
-// svgHeight:
-// 200
-// svgX:
-// 350
-// svgY:
-// 275
-// Student
-// displayText:
-// Green Employees
-// activeColor:
-// lightgreen
-// svgWidth:
-// 200
-// svgHeight:
-// 200
-// svgX:
-// 0
-// svgY:
-// 250
-// TechnicalLibrary
-// displayText:
-// Technical Library
-// activeColor:
-// lightblue
-// svgWidth:
-// 200
-// svgHeight:
-// 200
-// svgX:
-// 700
-// svgY:
-// 1100
-// Training
-// displayText:
-// Intentional Training
-// activeColor:
-// orange
-// svgWidth:
-// 200
-// svgHeight:
-// 200
-// svgX:
-// 350
-// svgY:
-// 550
-// Why
-// displayText:
-// The Why
-// activeColor:
-// purple
-// svgWidth:
-// 200
-// svgHeight:
-// 200
-// svgX:
-// 150
-// svgY:
-// 850
-// {
-//     "Books": {
-//         "name": "Books",
-//         "displayText": "Technical Library",
-//         "activeColor": "red",
-//         "svgWidth": "200",
-//         "svgHeight": "200",
-//         "svgX": "600",
-//         "svgY": "800"
-//     },
-//     "Community": {
-//         "name": "Community",
-//         "displayText": "Community Growth",
-//         "activeColor": "green",
-//         "svgWidth": "350",
-//         "svgHeight": "350",
-//         "svgX": "600",
-//         "svgY": "350"
-//     },
-//     "Manager": {
-//         "name": "Manager",
-//         "displayText": "Experienced Employees",
-//         "activeColor": "gold",
-//         "svgWidth": "175",
-//         "svgHeight": "175",
-//         "svgX": "250",
-//         "svgY": "0"
-//     },
-//     "Outreach": {
-//         "name": "Outreach",
-//         "displayText": "SEO/Outreach",
-//         "activeColor": "blue",
-//         "svgWidth": "200",
-//         "svgHeight": "200",
-//         "svgX": "450",
-//         "svgY": "1100"
-//     },
-//     "PersonalGrowth": {
-//         "name": "PersonalGrowth",
-//         "displayText": "Employee Growth",
-//         "activeColor": "green",
-//         "svgWidth": "200",
-//         "svgHeight": "200",
-//         "svgX": "700",
-//         "svgY": "200"
-//     },
-//     "QuestionMark": {
-//         "name": "QuestionMark",
-//         "displayText": "Community Growth",
-//         "activeColor": "magenta",
-//         "svgWidth": "200",
-//         "svgHeight": "200",
-//         "svgX": "350",
-//         "svgY": "275"
-//     },
-//     "Student": {
-//         "name": "Student",
-//         "displayText": "Green Employees",
-//         "activeColor": "lightgreen",
-//         "svgWidth": "200",
-//         "svgHeight": "200",
-//         "svgX": "0",
-//         "svgY": "250"
-//     },
-//     "TechnicalLibrary": {
-//         "name": "TechnicalLibrary",
-//         "displayText": "Technical Library",
-//         "activeColor": "lightblue",
-//         "svgWidth": "200",
-//         "svgHeight": "200",
-//         "svgX": "700",
-//         "svgY": "1100"
-//     },
-//     "Training": {
-//         "name": "Training",
-//         "displayText": "Intentional Training",
-//         "activeColor": "orange",
-//         "svgWidth": "200",
-//         "svgHeight": "200",
-//         "svgX": "350",
-//         "svgY": "550"
-//     },
-//     "Why": {
-//         "name": "Why",
-//         "displayText": "The Why",
-//         "activeColor": "purple",
-//         "svgWidth": "200",
-//         "svgHeight": "200",
-//         "svgX": "150",
-//         "svgY": "850"
-//     }
-// }
