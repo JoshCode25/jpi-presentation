@@ -5,7 +5,7 @@
 
 	//remove svg property names that shouldn't be displayed/edited
 	const hiddenLabelNames = ['name', 'component'];
-	const labelNames = Object.keys($SVGInfoStore[name]).filter(
+	$: labelNames = Object.keys($SVGInfoStore[name]).filter(
 		(keyName) => !hiddenLabelNames.includes(keyName)
 	);
 </script>
@@ -17,11 +17,7 @@
 			{#each labelNames as labelName}
 				<li>
 					{labelName}:
-					<input
-						on:input={(value) =>
-							SVGInfoStore.updateValue(name, labelName, value)}
-						bind:value={$SVGInfoStore[name][labelName]}
-					/>
+					<input bind:value={$SVGInfoStore[name][labelName]} />
 				</li>
 			{/each}
 		</ul>
@@ -42,6 +38,7 @@
 		list-style-type: none;
 	}
 	input {
+		margin-left: 5px;
 		width: 150px;
 		border: 1px solid white;
 	}

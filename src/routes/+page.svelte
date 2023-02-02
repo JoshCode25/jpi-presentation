@@ -29,6 +29,6 @@
 <style>
 	.grid-col {
 		display: grid;
-		grid-template-columns: 1fr 300px;
+		grid-template-columns: 1fr 200px;
 	}
 </style>

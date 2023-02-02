@@ -4,16 +4,9 @@
 	export let name = 'QuestionMark';
 
 	const inactiveColor = 'gray';
-	const svgInfo = $SVGInfoStore[name];
-	const {
-		component,
-		displayText,
-		activeColor,
-		svgWidth,
-		svgHeight,
-		svgX,
-		svgY,
-	} = svgInfo;
+	$: svgInfo = $SVGInfoStore[name];
+	$: ({ component, displayText, activeColor, svgWidth, svgHeight, svgX, svgY } =
+		svgInfo);
 
 	let SVGActive = false;
 	$: fillColor = SVGActive ? activeColor : inactiveColor;
