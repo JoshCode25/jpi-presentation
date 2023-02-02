@@ -4,7 +4,7 @@ ghpages.publish(
 	'public', // path to public directory
 	{
 		branch: 'gh-pages',
-		repo: 'https://github.com/joshcode25/vheres-valdo.git', // Update to point to your repository
+		repo: 'https://github.com/joshcode25/jpi-presentation.git', // Update to point to your repository
 		user: {
 			name: 'Josh Gannon', // update to use your name
 			email: 'joshcode25@gmail.com', // Update to use your email
