@@ -1,7 +1,7 @@
-var ghpages = require('gh-pages');
+import { publish } from 'gh-pages';
 
-ghpages.publish(
-	'public', // path to public directory
+publish(
+	'build', // path to public directory
 	{
 		branch: 'gh-pages',
 		repo: 'https://github.com/joshcode25/jpi-presentation.git', // Update to point to your repository
@@ -9,6 +9,7 @@ ghpages.publish(
 			name: 'Josh Gannon', // update to use your name
 			email: 'joshcode25@gmail.com', // Update to use your email
 		},
+		dotfiles: true,
 	},
 	() => {
 		console.log('Deploy Complete!');
